@@ -10,6 +10,7 @@ services:
       - "16020:16020"  # HBase RegionServer
       - "16030:16030"  # HBase RegionServer Web UI
       - "2181:2181"    # ZooKeeper
+      - "9090:9090"   # Thrift server
     volumes:
       - hbase_data:/data
     environment:
